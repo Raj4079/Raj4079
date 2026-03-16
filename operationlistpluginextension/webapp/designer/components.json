@@ -1,0 +1,36 @@
+{
+	"components": [
+		{
+			"id": "operationlistpluginextension",
+			"type": "VIEW_PLUGIN",
+			"allowMultipleInstances": false,
+			"name": "rits.custom.plugin.operationlistpluginextension.operationlistpluginextension",
+			"propertyEditor": "rits.custom.plugin.operationlistpluginextension.operationlistpluginextension.builder.PropertyEditor",
+			"i18n": "rits.custom.plugin.operationlistpluginextension.operationlistpluginextension.i18n.i18n",
+            "productionProcessEnabled": true,
+           "productionProcessTitle": "operationlistpluginextension",
+			"supportedPodTypes": [
+				"WORK_CENTER",
+				"OPERATION",
+				"ORDER",
+				"OTHER"
+			]
+		}   
+	],
+	"extensions":[
+		{
+            "provider": "rits/custom/plugin/operationlistpluginextension/operationListExtensionProvider/ExtensionProvider",
+            "controller": "sap.dm.dme.plugins.operationListPlugin",
+            "inclusions": [
+                {
+                    "pods": [
+                        "WC POD CES"
+                    ],
+                    "plants": [
+                        "KTTRN"
+                    ]
+                }
+            ]
+        }
+	]
+}

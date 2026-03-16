@@ -1,0 +1,14 @@
+{
+  "welcomeFile": "/operationlistpluginextension/index.html",
+  "authenticationMethod": "none",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/operationlistpluginextension/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    }
+  ]
+}
