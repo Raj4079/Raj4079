@@ -1,0 +1,5 @@
+#GET http://localhost:4004/odata/v4/product/printHelloWorld(input='Hello')
+
+#GET http://localhost:4004/odata/v4/product/addItmes(num1=5,num2=10)
+
+GET  http://localhost:4004/odata/v4/product/myFunction(element=2)
